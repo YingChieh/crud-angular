@@ -1,27 +1,24 @@
-# Working
+# Exam objectives
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.4.
+Create a CRUD with angular with the following code.
+There are 3 main components which they should communicate with each other. 
+The app should work like this:
 
-## Development server
++ When you click `Add Element` the form component should become visible [http://prntscr.com/nvycnn](#http://prntscr.com/nvycnn). 
+The form has only title and description fields and when you type save it will add one more element to the elements variable in table.component.ts.
+We recommend to use Reactive Forms for the form.component.ts.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
++ When you click an element in the table the details form should become visible.
+It will show the title and the description of the element and has an `Edit` and `Delete` button [http://prntscr.com/nvyeif](#http://prntscr.com/nvyeif).
 
-## Code scaffolding
+    + When you click `Edit` it will hide the details component and show the forms component but this time the fields will be filled with the element title and description [http://prntscr.com/nvyfhr](#http://prntscr.com/nvyfhr).
+    When you type save it will update the element and also the table
+    + When you click `Delete` it will alert if you want to delete this element. 
+    If true then the element is removed and table is updated.
+    
+Try to keep the code as clean as possible. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Bonus Points
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
++ Using Angular ViewChild [https://angular.io/api/core/ViewChild](#https://angular.io/api/core/ViewChild)
++ Improving the design. The css skills are not that important but if you make a smooth design that would give bonus points
