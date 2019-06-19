@@ -1,4 +1,15 @@
 <form [formGroup]="elementForm" (ngSubmit)="onSubmit();">
+    <!-- Form with validations warning -->
+    <ul class="list-group">
+        <li class="list-group-item text-danger"
+            *ngIf="elementForm.controls['title'].hasError('required') && elementForm.controls['title'].touched">
+            ‧ The <b>title</b> is required
+        </li>
+        <li class="list-group-item text-danger"
+            *ngIf="elementForm.controls['description'].hasError('required') && elementForm.controls['description'].touched">
+            ‧ The <b>description</b> is required
+        </li>
+    </ul>
     <div class="form-group">
         <label>Title</label>
         <input class="form-control" placeholder="title" type="text" formControlName="title" required>
