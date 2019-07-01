@@ -1,5 +1,3 @@
-# Exam objectives
-
 Create a CRUD with angular with the following code.
 There are 3 main components which they should communicate with each other. 
 The app should work like this:
