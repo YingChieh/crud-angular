@@ -1,5 +1,3 @@
-# Exam objectives
-
 Create a CRUD with angular with the following code.
 There are 3 main components which they should communicate with each other. 
 The app should work like this:
@@ -15,10 +13,3 @@ It will show the title and the description of the element and has an `Edit` and 
     When you type save it will update the element and also the table
     + When you click `Delete` it will alert if you want to delete this element. 
     If true then the element is removed and table is updated.
-    
-Try to keep the code as clean as possible. 
-
-## Bonus Points
-
-+ Using Angular ViewChild [https://angular.io/api/core/ViewChild](#https://angular.io/api/core/ViewChild)
-+ Improving the design. The css skills are not that important but if you make a smooth design that would give bonus points
