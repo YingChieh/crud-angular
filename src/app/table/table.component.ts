@@ -20,7 +20,7 @@ export class TableComponent implements OnInit {
 
     private subscription: Subscription;
 
-    constructor(private _tableService: TableService) {
+    constructor(public _tableService: TableService) {
     }
 
     ngOnInit() {
